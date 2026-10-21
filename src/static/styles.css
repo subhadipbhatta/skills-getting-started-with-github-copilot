@@ -74,6 +74,82 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid #c5cae9;
+  border-radius: 5px;
+  background-color: #eef2ff;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #3949ab;
+  font-size: 1rem;
+}
+
+.participants-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participants-section li {
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.participants-section li:last-child {
+  margin-bottom: 0;
+}
+
+.participant-delete-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  color: #b42318;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.participant-delete-button:hover:not(:disabled) {
+  color: #8f1d14;
+  background-color: #fdecea;
+  border-color: #f5c2bd;
+}
+
+.participant-delete-button:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participant-delete-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.participant-delete-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.participants-empty {
+  color: #666;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
